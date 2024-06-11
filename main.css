@@ -41,12 +41,17 @@ h5 {
 
 .loja {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 35% 65%;
 }
 
 .loja section h4 {
     font-weight: lighter;
     font-size: 1em;
+}
+
+.loja aside h2 {
+    border-bottom: 3px solid #000;
+    padding-bottom: 16px;
 }
 
 form li {
@@ -66,7 +71,12 @@ body {
 }
 
 .sobre .loja img{
-    max-width: 300px;
+    max-width: 350px;
+}
+
+.linha h2 {
+    border-bottom: 3px solid #000;
+    padding-bottom: 16px;
 }
 
 .produto img {
@@ -129,4 +139,41 @@ footer {
     background-color: black;
     padding: 8px 0;
     text-align: center;
+}
+
+@media screen and  (max-width: 767px) {
+    .loja {
+        display: block;
+        grid-template-columns: 35% 65%;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .sobre .loja img{
+        max-width: 320px;
+    }
+
+    .loja aside {
+        margin-left: 2px;
+        margin-bottom: 16px;
+    }
+    
+    .linha h2 {
+        border-bottom: 3px solid #000;
+        padding-bottom: 16px;
+    }
+    
+    .produto img {
+        max-width: 240px;
+    }
+    
+    .sobre {
+        margin-bottom: 16px;
+    }
+    
+    .sobre .produto a{
+        display: block;
+    }
 }
