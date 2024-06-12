@@ -152,7 +152,7 @@ footer {
     }
 
     .sobre .loja img{
-        max-width: 320px;
+        max-width: 100%;
     }
 
     .loja aside {
@@ -175,5 +175,21 @@ footer {
     
     .sobre .produto a{
         display: block;
+    }
+
+    .produtos {
+        display: block;
+    }
+
+    .produto img {
+        max-width: 100%;
+    }
+
+    .produtos .botao {
+        padding: 6px;
+        width: 98%;
+        margin-bottom: 32px;
+        color: #fff;
+        background-color: black;
     }
 }
