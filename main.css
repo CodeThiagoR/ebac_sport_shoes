@@ -131,6 +131,7 @@ a {
     margin-bottom: 32px;
     color: #fff;
     background-color: black;
+    border-radius: 6px;
 }
 
 footer {
@@ -147,12 +148,26 @@ footer {
         grid-template-columns: 35% 65%;
     }
 
-    .container {
-        max-width: 90%;
+    header .container {
+        padding: 8px;
     }
 
+    .container {
+        max-width: 85%;
+    }
+
+    .container aside h4 {
+        max-width: 95%;
+    }
+
+    form li {
+        display: flex;
+        font-family: Roboto, sans-serif;
+        font-weight: bold;
+        }
+
     .sobre .loja img{
-        max-width: 100%;
+        max-width: 95%;
     }
 
     .loja aside {
@@ -168,6 +183,14 @@ footer {
     .produto img {
         max-width: 240px;
     }
+
+    .produtos h4 {
+        max-width: 95%;
+    }
+    
+    .linha h2 {
+        max-width: 95%;
+    }
     
     .sobre {
         margin-bottom: 16px;
@@ -182,14 +205,25 @@ footer {
     }
 
     .produto img {
-        max-width: 100%;
+        max-width: 95%;
     }
 
     .produtos .botao {
         padding: 6px;
-        width: 98%;
+        width: 95%;
         margin-bottom: 32px;
         color: #fff;
         background-color: black;
     }
+}
+
+@media screen and (min-width 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .loja {
+        display: block;
+    }
+
 }
